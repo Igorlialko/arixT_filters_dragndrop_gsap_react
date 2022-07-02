@@ -1,0 +1,56 @@
+.user-card{
+  padding: 24px 24px 23px;
+  border: 1px solid #F3F3F3;
+  border-radius: 12px;
+  max-width: 575px;
+  width: 100vw;
+  box-shadow: var(--Purple100) 0 0 0 0px;
+  transition: box-shadow .3s ;
+
+  &__container{
+    display: flex;
+    &>*:not(:last-child){
+      margin-right: 16px;
+    }
+  }
+  &__img{
+    width: 85px;
+    height: 82px;
+    border-radius: 12px;
+    overflow: hidden;
+    img{
+      width: inherit;
+      height: inherit;
+      object-fit: cover;
+    }
+  }
+  &__name{
+    white-space: nowrap;
+  }
+  &__description{
+    display: flex;
+    flex-direction: column;
+    &>*:not(:last-child){
+      margin-bottom: 2px;
+    }
+    &>*:last-child{
+      margin-top: 7px;
+    }
+    &-title{
+      white-space: nowrap;
+      font-family: 'WorkSans';
+      font-style: normal;
+      font-weight: 400;
+      font-size: 13px;
+      line-height: 15px;
+      letter-spacing: -0.02em;
+    }
+  }
+  &__Btn{
+    margin-left: auto;
+    margin-top: auto;
+  }
+  &__spanBtn{
+    min-width: 93px;
+  }
+}

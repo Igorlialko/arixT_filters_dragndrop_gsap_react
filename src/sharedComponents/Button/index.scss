@@ -1,0 +1,17 @@
+.button{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: var(--Purple500);
+  border-radius: 12px;
+  max-height: 48px;
+  transition: all 0.3s ease;
+  color:#FFFFFF;
+  padding: 12px 24px;
+  border: 1px solid var(--Purple500);
+
+  &:hover{
+    color: var(--Purple500);
+    background: var(--Purple100);
+  }
+}

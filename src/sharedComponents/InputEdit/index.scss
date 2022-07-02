@@ -1,0 +1,41 @@
+.standard-input.edit{
+  width: 100%;
+  padding-right: 163px;
+  transition: all .3s ;
+  &.div{
+    color: var(--Neutral500);
+    background: #F3F3F3;
+    pointer-events: none;
+  }
+  &.validate{
+    border: 1px solid rgba(227, 48, 48, 1);
+  }
+}
+.input-edit{
+  opacity: 0;
+  border-radius: 12px ;
+  overflow: hidden;
+  width: 100%;
+  position: relative;
+  transition: all .5s ;
+
+  &__valid{
+    color:rgba(227, 48, 48, 1);
+    pointer-events: none;
+    position: absolute;
+    font-size: 10px;
+    line-height: 100%;
+    top: -2px;
+    left: 12px;
+    transform: translateY(100%);
+  }
+  &__btn{
+    position: absolute;
+    top:0;
+    right: 0;
+    width: 143px;
+    height: 100%;
+    background: var(--Purple500);
+    color:var(--background);
+  }
+}

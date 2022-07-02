@@ -1,0 +1,25 @@
+.filter-block {
+  padding: 27px 29px 22px 29px;
+  border: 1px solid #F3F3F3;
+  border-radius: 12px;
+  width: 365px;
+
+  &__container:not(:last-child) {
+    margin-bottom: 24px;
+  }
+  &__mb7 {
+    margin-bottom: 7px;
+  }
+  &__age {
+    margin-bottom: 16px;
+    &-minmax {
+      margin-top: 13px;
+      font-size: 14px;
+    }
+  }
+  &__male{
+    margin-right: 25px;
+  }
+
+
+}

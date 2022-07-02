@@ -1,0 +1,10 @@
+.standard-input {
+  padding: 14px;
+  border: 1px solid #121212;
+  border-radius: 12px;
+  width: 100%;
+  &::placeholder{
+    color:var(--Neutral500)
+  }
+
+}

@@ -1,0 +1,30 @@
+@font-face {
+  font-family: 'Poppins';
+  src:url('../assets/fonts/Poppins-Medium/Poppins-Medium.eot') ;
+  src:local('@'),url('../assets/fonts/Poppins-Medium/Poppins-Medium.woff2') format('woff2'),
+  url('../assets/fonts/Poppins-Medium/Poppins-Medium.ttf') format('truetype'),
+  url('../assets/fonts/Poppins-Medium/Poppins-Medium.woff') format('woff');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'WorkSans';
+  src:url('../assets/fonts/WorkSans-Bold/WorkSans-Bold.eot') ;
+  src:local('@'),url('../assets/fonts/WorkSans-Bold/WorkSans-Bold.woff2') format('woff2'),
+  url('../assets/fonts/WorkSans-Bold/WorkSans-Bold.ttf') format('truetype'),
+  url('../assets/fonts/WorkSans-Bold/WorkSans-Bold.woff') format('woff');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'WorkSans';
+  src:url('../assets/fonts/WorkSans-Regular/WorkSans-Regular.eot') ;
+  src:local('@'),url('../assets/fonts/WorkSans-Regular/WorkSans-Regular.woff2') format('woff2'),
+  url('../assets/fonts/WorkSans-Regular/WorkSans-Regular.ttf') format('truetype'),
+  url('../assets/fonts/WorkSans-Regular/WorkSans-Regular.woff') format('woff');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}

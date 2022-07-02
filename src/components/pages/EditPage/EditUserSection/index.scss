@@ -1,0 +1,69 @@
+.edit-user {
+  &__container {
+    padding: 75px 0;
+  }
+
+  &__btn {
+    width: 100%;
+    span{
+      min-width: 152px;
+    }
+  }
+
+  &__delete {
+    width: 100%;
+    background: rgba(227, 48, 48, 1);
+    color: #FFFFFF;
+    border: 1px solid rgba(227, 48, 48, 1);
+    &:hover {
+      background: inherit;
+      color: rgba(227, 48, 48, 1);
+    }
+
+    span {
+      min-width: 152px;
+    }
+  }
+
+  &__form {
+    display: flex;
+
+    &-profile {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin-right: 47px;
+      text-align: center;
+      &>*{
+        opacity: 0;
+      }
+    }
+
+    &-img {
+      margin-top: 73px;
+      width: 200px;
+      height: 200px;
+      border-radius: 50%;
+      overflow: hidden;
+      margin-bottom: 16px;
+
+      img {
+        object-fit: cover;
+        width: inherit;
+        height: inherit;
+      }
+    }
+
+    &-date {
+      margin-bottom: 50px;
+    }
+
+    &-inputs {
+      margin-top: 121px;
+      min-width: 448px;
+      &>*:not(:last-child){
+        margin-bottom: 12px;
+      }
+    }
+  }
+}

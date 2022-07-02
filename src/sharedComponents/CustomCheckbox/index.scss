@@ -1,0 +1,12 @@
+.custom-checkbox{
+  padding: 8px 18px;
+  background: #FFFFFF;
+  border: 1px solid #121212;
+  border-radius: 24px;
+  transition: all .4s ease;
+  &.active{
+    background: var(--Purple100);
+    color: var(--Purple500);
+    border: 1px solid var(--Purple500);
+  }
+}
