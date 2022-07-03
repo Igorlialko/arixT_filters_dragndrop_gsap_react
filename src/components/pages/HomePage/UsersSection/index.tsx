@@ -12,6 +12,9 @@ import {
 import usePagination from "../../../../hooks/usePagination";
 import useFilters from "../../../../hooks/useFilters";
 import Preloader from "../../../Preloader";
+import ArrowDown from "../../../../assets/icons/ArrowDown";
+import ArrowUp from "../../../../assets/icons/ArrowUp";
+import useReverse from "../../../../hooks/useReverse";
 
 import {Pagination} from "./Pagination";
 import {Filters} from "./Filters";
@@ -37,17 +40,24 @@ export const UsersSection = () => {
     sortOptions
   } = useFilters();
 
+  //reverse
+  const {
+    reverse, isActiveReverse,
+    reverseUp, reverseDown
+  } = useReverse(sort);
+
   //start filters
   const filteredUsersLength = useTypedSelector(state => state.userReducer.filteredUsers.length);
   const isLoadingFilters = useTypedSelector(state => state.userReducer.isLoadingFilters);
 
   const debounceFiltration = useDebounce(useCallback((search: string, sort: string,
     female: boolean, male: boolean,
-    minAge: number, maxAge: number) => {
+    minAge: number, maxAge: number, reverse: boolean) => {
     dispatch(setFilteredUsers({
       search, sort,
       female, male,
-      minAge, maxAge
+      minAge, maxAge,
+      reverse
     }));
     setPagArr([1]);
     setActivePag(1);
@@ -57,16 +67,16 @@ export const UsersSection = () => {
     dispatch(setIsLoadingFilters(true));
     debounceFiltration(search, sort,
       female, male,
-      minAge, maxAge);
+      minAge, maxAge, reverse);
   }, [debounceFiltration, dispatch,
     search, sort,
     female, male,
-    minAge, maxAge]);
+    minAge, maxAge, reverse]);
 
   //get users
   /* eslint-disable */
-  const selectorAction = useCallback(selectUsersPagination(activePag, limitOption), [activePag, limitOption]);
-  /* eslint-enable */
+    const selectorAction = useCallback(selectUsersPagination(activePag, limitOption), [activePag, limitOption]);
+    /* eslint-enable */
   const users = useTypedSelector(selectorAction);
 
   const isAllPages = useMemo(() => {
@@ -111,7 +121,19 @@ export const UsersSection = () => {
           />
         </div>
         <div className="users__list" ref={usersRef}>
-          <h1 className="users__title">List of users</h1>
+          <h1 className="users__title">
+                        List of users
+            <div className={`users__title-reverse ${isActiveReverse ? "active" : ""}`}>
+              <ArrowDown
+                className={`users__title-reverse__arrow ${isActiveReverse && !reverse ? "active" : ""}`}
+                onClick={reverseDown}
+              />
+              <ArrowUp
+                className={`users__title-reverse__arrow  ${isActiveReverse && reverse ? "active" : ""}`}
+                onClick={reverseUp}
+              />
+            </div>
+          </h1>
           {isLoadingFilters ? <Preloader/> :
             isFilteredNull ? <h2>-"no results"-</h2> :
               <>

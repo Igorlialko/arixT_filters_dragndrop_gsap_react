@@ -4,7 +4,7 @@ import {IUserLocale} from "../../types/users";
 import {binarySearch} from "../../helpers/functions/binarySearch";
 
 interface IInitialState {
-    users: IUserLocale[]|any,
+    users: IUserLocale[] | any,
     filteredUsers: IUserLocale[],
     isLoadingFilters: boolean,
 }
@@ -23,7 +23,7 @@ const userSlice = createSlice({
       state.users = payload;
     },
     removeUser(state, {payload}) {
-      state.users = state.users.filter((user:IUserLocale) => user.id !== payload);
+      state.users = state.users.filter((user: IUserLocale) => user.id !== payload);
     },
     setIsLoadingFilters(state, {payload}) {
       state.isLoadingFilters = payload;
@@ -32,7 +32,8 @@ const userSlice = createSlice({
       const {
         search, sort,
         female, male,
-        minAge, maxAge
+        minAge, maxAge,
+        reverse
       } = payload;
 
       let stack: any = [];
@@ -95,6 +96,7 @@ const userSlice = createSlice({
         sortingArrString("position");
         break;
       }
+      if (reverse) stack.reverse();
       state.filteredUsers = stack;
       state.isLoadingFilters = false;
     },

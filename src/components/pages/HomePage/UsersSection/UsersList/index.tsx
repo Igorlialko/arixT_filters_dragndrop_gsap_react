@@ -26,7 +26,6 @@ export const UsersList: FC<Props> = ({users, isActiveDrag}) => {
     isActiveDrag && initDrag(containerRef);
   }, [users, isActiveDrag]);
 
-
   return (
     <div className={`users__list-main ${isActiveDrag ? "isActiveDrag" : ""}`}
       ref={containerRef}

@@ -3,6 +3,8 @@
   border: 1px solid #F3F3F3;
   border-radius: 12px;
   width: 365px;
+  position: relative;
+  z-index: 10;
 
   &__container:not(:last-child) {
     margin-bottom: 24px;

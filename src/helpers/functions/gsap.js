@@ -54,11 +54,13 @@ export function initDrag(containerRef) {
     gsap.set(element, {y: index * rowSize});
     const setIndex = (index) => {
       sortable.index = index;
-      //dispatch to store|| set order global
+      //you can dispatch to store || set order global
       if (!dragger.isDragging) layout();
     };
 
     function downAction() {
+      element.querySelector(".tooltip__content").style.display="none";
+      element.querySelector(".user-card__container").style.pointerEvents="none";
       animation.play();
       this.update();
     }
@@ -71,6 +73,7 @@ export function initDrag(containerRef) {
     }
 
     function upAction() {
+      element.querySelector(".user-card__container").style.pointerEvents="";
       animation.reverse();
       layout();
     }
