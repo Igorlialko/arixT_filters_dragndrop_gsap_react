@@ -3,14 +3,14 @@
     padding: 75px 0;
   }
 
-  &__btn {
+  &__btn.button  {
     width: 100%;
     span{
       min-width: 152px;
     }
   }
 
-  &__delete {
+  &__delete.button {
     width: 100%;
     background: rgba(227, 48, 48, 1);
     color: #FFFFFF;
