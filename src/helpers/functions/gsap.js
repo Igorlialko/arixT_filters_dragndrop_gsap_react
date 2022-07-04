@@ -59,7 +59,7 @@ export function initDrag(containerRef) {
     };
 
     function downAction() {
-      element.querySelector(".tooltip__content").style.display="none";
+      if(element.querySelector(".tooltip__content"))element.querySelector(".tooltip__content").style.display="none";
       element.querySelector(".user-card__container").style.pointerEvents="none";
       animation.play();
       this.update();

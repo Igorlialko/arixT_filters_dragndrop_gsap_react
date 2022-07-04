@@ -2,17 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c9c898e2-152f-4002-a14d-f4b2d8c63c30" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/assets/icons/ArrowDown.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/icons/ArrowUp.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/hooks/useReverse.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/pages/HomePage/UsersSection/Filters/index.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/pages/HomePage/UsersSection/Filters/index.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/pages/HomePage/UsersSection/UsersList/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/pages/HomePage/UsersSection/UsersList/index.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/pages/HomePage/UsersSection/index.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/pages/HomePage/UsersSection/index.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/pages/HomePage/UsersSection/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/pages/HomePage/UsersSection/index.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/helpers/functions/gsap.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/helpers/functions/gsap.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/sharedComponents/Select/index.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/sharedComponents/Select/index.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/store/reducers/userReducer.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/store/reducers/userReducer.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -39,7 +29,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/assets/icons" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../Igorlialko.github.io" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="ts.external.directory.path" value="D:\tests_task_to_vakancy\ArixessDeploy\arixT_filters_dragndrop_gsap_react\node_modules\typescript\lib" />
     <property name="vue.rearranger.settings.migration" value="true" />
@@ -59,7 +49,8 @@
       <updated>1656787855240</updated>
       <workItem from="1656787856461" duration="621000" />
       <workItem from="1656792428726" duration="1273000" />
-      <workItem from="1656846281843" duration="6464000" />
+      <workItem from="1656846281843" duration="6748000" />
+      <workItem from="1656853548796" duration="689000" />
     </task>
     <servers />
   </component>
