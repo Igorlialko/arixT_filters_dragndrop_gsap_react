@@ -79,7 +79,7 @@ const userSlice = createSlice({
           return 0;
         };
         if (!stack.length && !search.length && !male && !female && minAge === 1 && maxAge === 99) {
-          stack = filterArray.sort(tactic);
+          stack = filterArray.concat([]).sort(tactic);
         } else {
           stack = stack.sort(tactic);
         }
