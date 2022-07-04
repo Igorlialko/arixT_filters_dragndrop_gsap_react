@@ -17,9 +17,9 @@ export const EditUserSection = () => {
   const navigate = useNavigate();
   const userByID = useTypedSelector(selectUser(`${id}`));
   useEffect(() => {
-    // if (!userByID) {
-    //   navigate("/");
-    // }
+    if (!userByID) {
+      navigate("/");
+    }
   }, [userByID, navigate]);
 
   // add in ref, because, don`t like moment changes,so it`s pretty
